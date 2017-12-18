@@ -15,9 +15,10 @@ This is an Open source implementations in Java, to attempt to convert from "Goog
 
 2. Use it in your project
 
-import com.preskofan.converter.googlebaidu.*;
 
 ```
+		import com.preskofan.converter.googlebaidu.*;
+		
 		GoogleLocation wgs84Shanghai = new GoogleLocation(31.1774276, 121.5272106);
 		BaiduLocation gcj02Shanghai = wgs84Shanghai.toBaiduLocation();
 		System.out.println("Shanghai Google WGS-94 location : " + wgs84Shanghai.getLatitude() + "; "
@@ -31,5 +32,4 @@ import com.preskofan.converter.googlebaidu.*;
 				+ gcj02Beijing.getLatitude() + "; " + gcj02Beijing.getLongitude());
 
 ```
- 
-Coming soon
+
