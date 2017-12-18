@@ -17,19 +17,20 @@ This is an Open source implementations in Java, to attempt to convert from "Goog
 
 
 ```
-		import com.preskofan.converter.googlebaidu.*;
-		
-		GoogleLocation wgs84Shanghai = new GoogleLocation(31.1774276, 121.5272106);
-		BaiduLocation gcj02Shanghai = wgs84Shanghai.toBaiduLocation();
-		System.out.println("Shanghai Google WGS-94 location : " + wgs84Shanghai.getLatitude() + "; "
-				+ wgs84Shanghai.getLongitude() + " to Baidu GCJ-02 location : " 
-				+ gcj02Shanghai.getLatitude() + "; " + gcj02Shanghai.getLongitude());
 
-		BaiduLocation wgs84Beijing = new BaiduLocation(39.91334545536069, 116.38404722455657);
-		GoogleLocation gcj02Beijing = wgs84Beijing.toGoogleLocation();
-		System.out.println("Beijing Google WGS-94 location : " + wgs84Beijing.getLatitude() + "; "
-				+ wgs84Beijing.getLongitude() + " to Baidu GCJ-02 location : " 
-				+ gcj02Beijing.getLatitude() + "; " + gcj02Beijing.getLongitude());
+import com.preskofan.converter.googlebaidu.*;
+
+GoogleLocation wgs84Shanghai = new GoogleLocation(31.1774276, 121.5272106);
+BaiduLocation gcj02Shanghai = wgs84Shanghai.toBaiduLocation();
+System.out.println("Shanghai Google WGS-94 location : " + wgs84Shanghai.getLatitude() + "; "
+		+ wgs84Shanghai.getLongitude() + " to Baidu GCJ-02 location : " 
+		+ gcj02Shanghai.getLatitude() + "; " + gcj02Shanghai.getLongitude());
+
+BaiduLocation wgs84Beijing = new BaiduLocation(39.91334545536069, 116.38404722455657);
+GoogleLocation gcj02Beijing = wgs84Beijing.toGoogleLocation();
+System.out.println("Beijing Google WGS-94 location : " + wgs84Beijing.getLatitude() + "; "
+		+ wgs84Beijing.getLongitude() + " to Baidu GCJ-02 location : " 
+		+ gcj02Beijing.getLatitude() + "; " + gcj02Beijing.getLongitude());
 
 ```
 
